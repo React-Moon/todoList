@@ -1,29 +1,20 @@
 import React from 'react'
+import { Navbar, Nav } from 'react-bootstrap'
+import './menu.css'
 
 export default props => (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+<div>
+    <Navbar bg="violet" variant="dark">
         {/* Logo menu */}
-        <a className="navbar-brand" href="#todo">
+        <Navbar.Brand href="todos">
             <i className="fa fa-calendar-check-o" ></i> 
             TodoApp
-        </a>
+        </Navbar.Brand>
         {/* menu body */}
-        <div>
-            <ul className="navbar-nav">
-                <li className="nav-item active">
-                  <a className="nav-link" href="#todos" >Todo</a>  
-                </li>
-                <li className="nav-item" >
-                    <a className="nav-link" href="#About">About</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-
-
-
-
-
-    
+        <Nav className="mr-auto">
+            <Nav.Link href="todos" >Todo</Nav.Link>  
+            <Nav.Link href="About">About</Nav.Link>
+        </Nav>
+    </Navbar>
+</div>
 )
