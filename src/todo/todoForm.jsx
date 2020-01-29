@@ -1,16 +1,25 @@
 import React from 'react'
-import Grid from '../template/grid'
+
+import { Container, Row, Col } from 'react-bootstrap'
 import IconButton from '../template/iconButton'
 
 export default props => (
     <div>
-        <Grid clos='12 9 10' >
-            <input type="text" className="form-control" placeholder="Adicione uma tarefa" />
-        </Grid>
+        <p> {props.tes} </p>
+        <Container>  
+            <Row>
+                <Col xs lg='11' >
+                    <input type="text" className="form-control" 
+                            onChange={props.handleChange}
+                            placeholder="Adicione uma tarefa" value={props.description} />
+                </Col>    
+                <Col xs lg='1'>
+                    <IconButton styleButton='primary' icon='plus' 
+                                onClick={props.handleAdd}>
+                    </IconButton>
+                </Col>        
+            </Row>
 
-        <Grid clos='12 9 10' >
-            <IconButton style='primary' icon='plus' >
-            </IconButton>
-        </Grid>
+        </Container>
     </div>
 )
