@@ -1,5 +1,6 @@
 import 'font-awesome/css/font-awesome.min.css';
 import '../sass/main.css'
+import '../template/custom.css'
 
 import React from 'react'
 import Menu from '../template/menu'

@@ -1,6 +1,6 @@
 
 export default props => {
-    if(props.test) {
+    if(props.noHide) {
         return props.children
     } else {
         return false
