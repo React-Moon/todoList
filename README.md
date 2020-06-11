@@ -57,11 +57,17 @@ $ cd todoList/backend
 # Run the command to mongodb image on the docker
 $ docker-compose up
 
+# Run the command to install modules
+$ yarn install
+
 # Run the command to run nodejs
 $ yarn dev
 
 # Go into the repository
 $ cd todoList/frontend
+
+# Run the command to install modules
+$ yarn install
 
 # Run the command to run reactjs
 $ yarn start
