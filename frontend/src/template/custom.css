@@ -1,0 +1,27 @@
+body {
+    background: #b721ff;
+}
+
+.cardTodo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.btnCustom{
+    margin-left: 5px;
+}
+
+.markedAsDone {
+    text-decoration: line-through;
+    color: #777;
+}
+
+.tableActions {
+    width: 105px;
+}
+
+.todoForm {
+    padding-bottom: 60px;
+}
